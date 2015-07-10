@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/*colors */
+$light-grey: #777;
+$grey-lighter: #eaeaea;
+$grey-darker: #222;
+$white: #fff;
+$grey-medium: #555;
+
 /* universal */
 
 body {
@@ -43,7 +50,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $light-grey;
 }
 
 p {
@@ -56,13 +63,13 @@ p {
   float: left;
   margin-right: 10 px;
   font-size: 1.7em;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
 }
@@ -73,12 +80,12 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+  border-top: 1px solid $grey-lighter;
+  color: $light-grey;
   a {
-    color: #555;
+    color: $grey-medium;
     &:hover {
-      color: #222;
+      color: $grey-darker;
     }
   }
   small {
